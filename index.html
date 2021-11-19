@@ -9,6 +9,33 @@
     <script src='main.js'></script>
 </head>
 <body>
-    
+    <form>
+        <label id="mintaSzoveg" for="szoveg">Mintaszöveg</label> <br>
+        <input type="text" name="szoveg" id="szoveg" onkeyup="szovegModositas()"> <br>
+
+
+        <label id="betuMeret" for="betuMeret">Betűméret</label> <br>
+        <input type="text" name="betuMeret" id="betuMeret" onkeyup="betuMeretModositas()"> <br>
+
+        <label id="szovegSzin" for="szovegSzin">Szövegszín</label> <br>
+        <input type="color" name="szovegSzin" id="szovegSzin" onkeyup="szinModositas()"> <br>
+
+
+        <label id="hatterSzin" for="hatterSzin">Háttérszín</label> <br>
+        <input type="color" name="hatterSzin" id="hatterSzin" onkeyup="hatterSzinModositas()"> <br>
+
+
+        <button id="alapHelyzet">Alaphelyzet</button>
+
+        <span onclick="felVeszGomb()" class="addBtn">Hozzáad</span>
+    </form>
+
+    <div class="container">
+        <h1>Előnézet</h1>
+
+        <p id="eloNezet"></p>
+    </div>
+
+    <ul id="lista"></ul>
 </body>
 </html>
